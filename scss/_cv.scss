@@ -156,3 +156,38 @@
     transform: translateY(-3px);
   }
 }
+
+@media (max-width: 768px) {
+  .cv-wrapper {
+    flex-direction: column;
+    box-shadow: none;
+  }
+
+  .cv-sidebar {
+    width: 100%;
+    padding: 1.5rem;
+    text-align: center;
+
+    img {
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      text-align: left;
+    }
+  }
+
+  .cv-main {
+    padding: 1.5rem;
+
+    .cv-header {
+      text-align: center;
+    }
+
+    .project-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
+}
