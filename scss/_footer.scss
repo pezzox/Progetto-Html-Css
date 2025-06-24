@@ -1,0 +1,50 @@
+ @use 'variables' as *;
+
+// Footer container
+.footer {
+  background-color: $background-color;
+  color: $text-muted;
+  padding: $spacing-md 0;
+  border-top: 1px solid $border-color;
+  text-align: center;
+  font-size: $font-size-sm;
+
+  // Responsive container
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 $spacing-md;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $spacing-sm;
+
+    @media (min-width: $breakpoint-sm) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  // Footer text
+  p {
+    margin: 0;
+  }
+
+  // Social links container
+  .social-links {
+    display: flex;
+    gap: $spacing-sm;
+
+    a {
+      color: $primary-color;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: lighten($primary-color, 15%);
+      }
+    }
+  }
+}
+

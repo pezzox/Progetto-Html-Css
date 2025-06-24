@@ -1,0 +1,19 @@
+
+// variables
+@use "variables" as *;
+
+// Base reset and layout structure
+@use "reset";
+@use "layout";
+
+// Reusable components
+@use "navbar";
+@use "footer";
+
+// Page-specific styles
+@use "home";
+@use "cv";
+@use "contact";
+
+// Media queries and responsive rules
+@use "responsive";

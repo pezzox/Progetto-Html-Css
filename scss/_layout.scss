@@ -1,0 +1,52 @@
+@use 'variables' as *;
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+}
+
+section {
+  padding-top: $spacing-lg;
+  padding-bottom: $spacing-lg;
+}
+
+// === Sticky Navbar ===
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: $background-color;
+  z-index: 1000;
+  box-shadow: $box-shadow;
+  padding: $spacing-sm 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: $font-size-md;
+    font-weight: bold;
+    color: $primary-color;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: $spacing-sm;
+
+    li a {
+      color: $text-color;
+      font-weight: 500;
+      padding: $spacing-xs $spacing-sm;
+      border-radius: $border-radius;
+
+      &:hover {
+        background-color: $primary-color;
+        color: #fff;
+      }
+    }
+  }
+}

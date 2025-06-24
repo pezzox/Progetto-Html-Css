@@ -1,0 +1,81 @@
+@use 'variables' as *;
+
+ 
+ // Contact page styles
+.contact-page {
+  background-color: $background-color;
+  color: $text-color;
+  font-family: $font-family-base;
+}
+
+// Wrapper for the contact content
+.contact-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+// Section title and description
+.contact-form-section {
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+    color: $primary-color;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    color: $text-muted;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    animation: fadeInUp 0.8s ease-out;
+
+    label {
+      font-size: 0.85rem;
+      margin-bottom: 0.3rem;
+    }
+
+    input,
+    textarea {
+      padding: 0.6rem;
+      margin-bottom: 1rem;
+      background-color: lighten($background-color, 3%);
+      border: 1px solid $border-color;
+      border-radius: $border-radius;
+      color: $text-color;
+      font-size: 0.9rem;
+    }
+
+    button {
+      align-self: flex-start;
+      padding: 0.6rem 1.2rem;
+      background-color: $primary-color;
+      border: none;
+      border-radius: $border-radius;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+
+      &:hover {
+        background-color: lighten($primary-color, 10%);
+      }
+    }
+  }
+}
+
+// Simple fade-in up animation
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,66 @@
+@use 'variables' as *;
+
+
+// Remove margin, padding, and set border-box for all elements
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Set root font size and enable smooth scroll behavior
+html {
+  font-size: 100%; // equals 16px
+  scroll-behavior: smooth;
+}
+
+// Base body styling: font, background, text color
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  background-color: $background-color;
+  color: $text-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Make media elements block-level and responsive
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+// Remove default link styling
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// Remove default list styles
+ul,
+ol {
+  list-style: none;
+}
+
+// Inherit font and remove borders for form elements
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+// Add base padding to all section elements
+section {
+  padding: $spacing-lg $spacing-md;
+}

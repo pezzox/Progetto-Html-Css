@@ -1,0 +1,91 @@
+@use '../variables' as *;
+
+//   Projects Section Styles
+
+
+.projects {
+  background-color: $background-color;
+  padding: $spacing-lg 0;
+
+  .projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 $spacing-md;
+
+    h3 {
+      font-size: $font-size-md;
+      color: $primary-color;
+      margin-bottom: $spacing-sm;
+      text-align: center;
+    }
+
+    .projects-intro {
+      color: $text-muted;
+      text-align: center;
+      margin-bottom: $spacing-lg;
+      font-size: $font-size-sm;
+    }
+
+    // Layout for project cards
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: $spacing-md;
+    }
+
+    // Individual project card style
+    .project-card {
+      background-color: lighten($background-color, 5%);
+      border: 1px solid $border-color;
+      border-radius: $border-radius;
+      padding: $spacing-sm;
+      box-shadow: $box-shadow;
+      text-align: center;
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: translateY(-4px);
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: $border-radius;
+        margin-bottom: $spacing-sm;
+      }
+
+      h4 {
+        color: $text-color;
+        margin-bottom: $spacing-xs;
+        font-size: $font-size-md;
+      }
+
+      p {
+        color: $text-muted;
+        font-size: $font-size-sm;
+        margin-bottom: $spacing-sm;
+      }
+
+      .tech {
+        display: inline-block;
+        font-size: $font-size-sm;
+        color: $primary-color;
+        margin-bottom: $spacing-sm;
+      }
+
+      .btn {
+        font-size: $font-size-sm;
+        padding: $spacing-xs $spacing-md;
+        border-radius: $border-radius;
+        background-color: $primary-color;
+        color: white;
+        display: inline-block;
+
+        &:hover {
+          background-color: darken($primary-color, 10%);
+        }
+      }
+    }
+  }
+}
+

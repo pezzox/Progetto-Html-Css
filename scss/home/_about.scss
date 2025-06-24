@@ -1,0 +1,73 @@
+@use '../variables' as *;
+
+//About Section Styles
+
+
+.about {
+  background-color: $background-color;
+  padding: $spacing-lg 0;
+
+  // Main layout container
+  .about-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 $spacing-md;
+    gap: $spacing-lg;
+
+    @media (min-width: $breakpoint-md) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+
+  // Text content section
+  .about-content {
+    flex: 1;
+
+    h3 {
+      color: $primary-color;
+      font-size: $font-size-md;
+      margin-bottom: $spacing-sm;
+    }
+
+    p {
+      font-size: $font-size-sm;
+      color: $text-color;
+      margin-bottom: $spacing-md;
+      line-height: $line-height-base;
+    }
+
+    // List of personal info points
+    .about-details {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: $font-size-sm;
+      color: $text-muted;
+
+      li {
+        margin-bottom: $spacing-xs;
+
+        strong {
+          color: $text-color;
+        }
+      }
+    }
+  }
+
+  // Image container
+  .about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    img {
+      max-width: 300px;
+      border-radius: $border-radius;
+      box-shadow: $box-shadow;
+    }
+  }
+}
