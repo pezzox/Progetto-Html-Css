@@ -12,30 +12,31 @@ portfolio-sito/
 ├── contatti.html      # Pagina contatti con form funzionante
 ├── cv.html            # Curriculum interattivo
 │
-├── css/
-│   └── main.css       # CSS compilato da SCSS
-│
-├── scss/
-│   ├── _variables.scss
-│   ├── _reset.scss
-│   ├── _layout.scss
-│   ├── _navbar.scss
-│   ├── _footer.scss
-│   ├── _contact.scss
-│   ├── _cv.scss
-│   └── home/
-│       ├── _hero.scss
-│       ├── _about.scss
-│       ├── _skills.scss
-│       ├── _projects.scss
-│       └── home.scss
-│
-├── js/
-│   └── contactform.js  # Invio del form contatti con EmailJS
+
 │
 ├── assets/
 │   ├── images/
 │   └── favicon.ico
+    ├── css/
+│   └── main.css       # CSS compilato da SCSS
+    │
+    ├── scss/
+    │   ├── _variables.scss
+    │   ├── _reset.scss
+    │   ├── _layout.scss
+    │   ├── _navbar.scss
+    │   ├── _footer.scss
+    │   ├── _contact.scss
+    │   ├── _cv.scss
+    │   └── home/
+    │       ├── _hero.scss
+    │       ├── _about.scss
+    │       ├── _skills.scss
+    │       ├── _projects.scss
+    │       └── home.scss
+    │
+    ├── js/
+    │   └── contactform.js  # Invio del form contatti con EmailJS
 ```
 
 ## 🛠️ Tecnologie Utilizzate
